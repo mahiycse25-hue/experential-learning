@@ -1,28 +1,29 @@
 <html>
 <head>
+
 <title>Flashcard</title>
 
-<!-- Link CSS file -->
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <div class="flashcard-container">
-  <div class="flashcard" onclick="this.classList.toggle('flipped')">
+  <div class="flashcard" id="card">
     
     <div class="card-face front">
-      <span class=label">English</span>
-      <h2 class="word">Ephemeral</h2>
+      <span class="label">English</span>
+      <h2 class="word" id="frontText">Ephemeral</h2>
     </div>
     
     <div class="card-face back">
       <span class="label">Spanish</span>
-      <h2 class="label">Efimero</h2>
+      <h2 class="word" id="backText">Efimero</h2>
     </div>
 
   </div>
 </div>
+
 <button onclick="nextCard()">Next Word</button>
 
 <script src="script.js">
