@@ -1,33 +1,50 @@
 <html>
+<html lang="en">
 <head>
-
-<title>Flashcard</title>
-
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Flashcard Website</title>
+    <link rel="stylesheet" href="stayle.css">
 </head>
 
 <body>
 
-<div class="flashcard-container">
-  <div class="flashcard" id="card">
-    
-    <div class="card-face front">
-      <span class="label">English</span>
-      <h2 class="word" id="frontText">Ephemeral</h2>
-    </div>
-    
-    <div class="card-face back">
-      <span class="label">Spanish</span>
-      <h2 class="word" id="backText">Efimero</h2>
+<!-- Navbar -->
+<nav class="navbar">
+    <h1>FlashLearn</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Flashcards</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+<!-- Main Section -->
+<div class="container">
+
+    <h2>Learn Vocabulary</h2>
+
+    <div class="flashcard-container">
+        <div class="flashcard" id="card" >
+
+            <!-- Front -->
+            <div class="card-face front">
+                <span>English</span>
+                <h2 id="frontText">Ephemeral</h2>
+            </div>
+
+            <!-- Back -->
+            <div class="card-face back">
+                <span>Spanish</span>
+                <h2 id="backText">Efimero</h2>
+            </div>
+
+        </div>
     </div>
 
-  </div>
+    <button onclick="nextCard()">Next Word</button>
+
 </div>
 
-<button onclick="nextCard()">Next Word</button>
-
-<script src="script.js">
-</script>
-
+<script src="scriptt.js"></script>
 </body>
 </html>
